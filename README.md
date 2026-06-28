@@ -6,11 +6,13 @@
 
 ___
 
-This is a fork made to support latest versions of Firefox, to keep the theme working as intended, while no new features are gonna be added.
+This is a fork of Echelon made to support the latest versions of Firefox, to keep the theme working as intended and implement some accuracy fixes.
 
-Though, for the intended experience, consider using [Nocturne](https://github.com/raytek-cafe/Nocturne).
+* Echelon is a Strata Firefox theme made by @travy-patty.
+* For the intended experience, use [Nocturne](https://github.com/raytek-cafe/Nocturne) or any other Firefox fork/patch with native controls restored.
+* If you're using Echelon 1.x or the original Echelon for 115, you can upgrade by deleting your old `chrome` folder and copying the new one over.
 
-Original description down below:
+Original description below:
 ___
 
 <h3 align="center">
@@ -24,6 +26,7 @@ ___
 </p>
 
 ## Coming from Echelon 1?
+
 Echelon versions before release 2.0 is no longer supported. The update checker may display an error message, if you wish to continue using Echelon 1, disable update checks on the Echelon Options window.
 
 ## Screenshots
