@@ -6,7 +6,7 @@
 
 ___
 
-This is a fork of Echelon made to support the latest versions of Firefox, to keep the theme working as intended and implement some accuracy fixes.
+This is a fork of Echelon made to support the latest versions of Firefox, to keep the theme working as intended and implement some bug fixes to the original.
 
 * Echelon is a Strata Firefox theme made by @travy-patty.
 * For the intended experience, use [Nocturne](https://github.com/raytek-cafe/Nocturne) or any other Firefox fork/patch with native controls restored.
