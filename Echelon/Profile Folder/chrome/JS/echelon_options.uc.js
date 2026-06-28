@@ -47,7 +47,7 @@
 		let item = echelonPrefsItem.cloneNode();
         item.id = "menu_echelonOptions";
 		item.addEventListener("command", launchEchelonOptions);
-        menu.append(echelonPrefsItem.cloneNode());
+        menu.append(item);
         menu.addEventListener("popupshowing", onPopupShowing);
     });
     waitForElement("#toolbar-context-menu").then((menu) => {
