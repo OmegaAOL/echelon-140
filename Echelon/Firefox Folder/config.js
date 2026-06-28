@@ -47,3 +47,9 @@ defaultPref("general.smoothScroll.stopDecelerationWeighting", ".4");
 
 // Enable CSS
 defaultPref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
+// Nocturne larp settings if applicable
+defaultPref("nocturne.tabs.oldWarnOnClose", true);
+defaultPref("nocturne.ui.oldaboutconfig", true);
+// seems counter intutive but this theme is meant for the new url bar
+defaultPref("nocturne.ui.oldurlbar", false);
