@@ -21,10 +21,20 @@
   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   aria-describedby="infoBody"
   headerparent="dialogGrid"
-  onunload="commonDialogOnUnload();"
 >
-  <dialog id="commonDialog" buttonpack="end">
+  <!-- TODO-LEGACY-SWITCH(omega): in new firefox, buttonpack is "end" -->
+  <dialog id="commonDialog" buttonpack="center">
     <linkset>
+      <html:link rel="stylesheet" href="chrome://global/skin/global.css" />
+      <html:link
+        rel="stylesheet"
+        href="chrome://global/content/commonDialog.css"
+      />
+      <html:link
+        rel="stylesheet"
+        href="chrome://global/skin/commonDialog.css"
+      />
+
       <html:link rel="localization" href="branding/brand.ftl" />
       <html:link rel="localization" href="toolkit/global/commonDialog.ftl" />
     </linkset>
@@ -33,14 +43,8 @@
     <script src="chrome://global/content/globalOverlay.js" />
     <script src="chrome://global/content/editMenuOverlay.js" />
     <script src="chrome://global/content/customElements.js" />
-    <script>
-      /* eslint-disable no-undef */
-      document.addEventListener("DOMContentLoaded", function () {
-        commonDialogOnLoad();
-      });
-    </script>
-
-    <script>
+	
+	<script>
       const { EchelonThemeManager } = ChromeUtils.importESModule("chrome://modules/content/EchelonThemeManager.sys.mjs");
       let g_themeManager = new EchelonThemeManager;
       g_themeManager.init(
@@ -50,19 +54,12 @@
     </script>
 
     <commandset id="selectEditMenuItems">
-      <command
-        id="cmd_copy"
-        oncommand="goDoCommand('cmd_copy')"
-        disabled="true"
-      />
-      <command id="cmd_selectAll" oncommand="goDoCommand('cmd_selectAll')" />
+      <command id="cmd_copy" disabled="true" />
+      <command id="cmd_selectAll" />
     </commandset>
 
     <popupset id="contentAreaContextSet">
-      <menupopup
-        id="contentAreaContextMenu"
-        onpopupshowing="goUpdateCommand('cmd_copy')"
-      >
+      <menupopup id="contentAreaContextMenu">
         <menuitem
           id="context-copy"
           data-l10n-id="common-dialog-copy-cmd"
@@ -110,7 +107,7 @@
       <div id="checkboxContainer" class="dialogRow" hidden="hidden">
         <div />
         <!-- spacer -->
-        <xul:checkbox id="checkbox" native="" oncommand="Dialog.onCheckbox()" />
+        <xul:checkbox id="checkbox" />
       </div>
     </div>
   </dialog>
