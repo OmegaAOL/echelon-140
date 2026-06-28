@@ -8,7 +8,7 @@ ___
 
 This is a fork of Echelon made to support the latest versions of Firefox, to keep the theme working as intended and implement some bug fixes to the original.
 
-* Echelon is a Strata Firefox theme made by @travy-patty.
+* Echelon is a Strata and Australis Firefox theme made by @travy-patty.
 * For the intended experience, use [Nocturne](https://github.com/raytek-cafe/Nocturne) or any other Firefox fork/patch with native controls restored.
 * If you're using Echelon 1.x or the original Echelon for 115, you can upgrade by deleting your old `chrome` folder and copying the new one over.
 
